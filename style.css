@@ -73,7 +73,8 @@ body {
 .custom-img {
   height: 150px;
 }
-/*certificates*/
-
-
 /*end of tech stack section*/
+/*projects section*/
+.custom-img-carousel{
+  height: 400px;
+}
