@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="#">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -21,7 +22,7 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-sm bg-light-subtle fixed-top">
       <div class="container">
-        <a href="" class="navbar-brand fw-bold">CYREL</a>
+        <a href="#home" class="navbar-brand fw-bold">CYREL</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,7 +46,7 @@
               <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -330,9 +331,9 @@
     </section>
     <!--end of tech-stack-->
     <!--project section-->
-    <section id="projects" class="container-fluid custom-height">
-      <div class="container pt-5 text-center">
-        <p class="pt-5 custom-color">Browse My Recent</p>
+    <section id="projects" class="container-fluid">
+      <div class="container py-5 text-center">
+        <p class="pt-4 custom-color">Browse My Recent</p>
         <h1 class="fw-bold">Projects</h1>
         <div class="row justify-content-center py-3">
           <div class="col-sm-2 m-3 border border-1 custom-border custom-rounded shadow">
@@ -364,6 +365,45 @@
       </div>
     </section>
     <!--end of project section-->
+    <!--contact section-->
+    <section id="contact" class="container-fluid custom-height">
+      <div class="container py-5">
+        <p class="custom-color pt-5 text-center">Get in Touch</p>
+        <h1 class="fw-bold text-center">Contact Me</h1>
+        <div class="row align-items-center">
+          <div class="col-4 border border-1 p-3">
+             <!-- Bootstrap 5 starter form -->
+  <form id="contactForm">
+
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+    </div>
+
+    <!-- Form submit button -->
+    <div class="float-end">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+
+  </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of contact section-->
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
