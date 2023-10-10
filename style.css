@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*universal css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+/*end of universal*/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*home section*/
+#home {
+  padding-top: 170px;
+  align-items: center;
+}
+
+.custom-color {
+  color: rgb(85, 85, 85);
+}
+.custom-btn {
+  width: 140px;
+  height: 50px;
+}
+
+.custom-height {
+  height: 100vh;
+}
+.custom-icon-size {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    padding-top: 130px;
+  }
+  /* .img-responsive > div > .custom-img {
+    width: 40px;
+  }
+  .img-responsive > .custom-img-js,
+  .custom-img-js > .custom-img-size {
+    width: 40px;
+    height: 75px;
+  }*/
+  .custom-div-height {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-div-height > .custom-img {
+    height: 85px;
+    width: 85px;
+  }
+}
+
+/*end of home section*/
+/*about section*/
+.custom-rounded {
+  border-radius: 2rem;
+}
+/*end of about section*/
+/*tech-stack section*/
+.custom-img {
+  height: 150px;
+}
