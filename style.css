@@ -74,13 +74,6 @@ body {
   height: 150px;
 }
 /*certificates*/
-.line {
-  display: inline-block;
-  width: 75%; /* Adjust the width of the line as needed */
-  height: 1px; /* Adjust the thickness of the line as needed */
-  background-color: rgb(85, 85, 85); /* Adjust the color of the line as needed */
-  vertical-align: middle; /* Align the line vertically with the text */
-  margin-left: 10px; /* Adjust the spacing between the word and the line */
-}
+
 
 /*end of tech stack section*/
