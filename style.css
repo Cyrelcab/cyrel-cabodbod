@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -78,6 +80,11 @@ body {
 .custom-img-project{
   width: 300px;
   height: 200px;
+  transition: transform .5s ease;
+
+}
+.custom-img-project:hover{
+  transform: scale(1.2);
 }
 .custom-border{
   width: 370px;
