@@ -5,8 +5,6 @@
   padding: 0;
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -63,6 +61,11 @@ body {
     height: 85px;
     width: 85px;
   }
+  /*tech-stack*/
+  div .custom-text{
+    width: 295px;
+    font-size: 14px;
+  }
 }
 
 /*end of home section*/
@@ -74,6 +77,9 @@ body {
 /*tech-stack section*/
 .custom-img {
   height: 150px;
+}
+.custom-text{
+  width: 50%;
 }
 /*end of tech stack section*/
 /*projects section*/
