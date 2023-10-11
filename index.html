@@ -18,11 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="d-flex justify-content-center">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
+
     <!--navbar-->
     <nav class="navbar navbar-expand-sm bg-light-subtle fixed-top"> 
       <div class="container">
@@ -57,7 +53,7 @@
     <!--section home-->
     <section id="home" class="align-items-center">
       <div class="container pb-5">
-        <div class="row align-items-center" data-aos="fade-up">
+        <div class="row align-items-center">
           <div class="col-lg-6 col-md-12 mx-auto text-center">
             <div class="d-inline-block">
               <img
@@ -389,7 +385,16 @@
     </section>
     <!--end of project section-->
     <!--footer-->
-    div.
+    <div class="container-fluid">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+        <small class="fw-light">Copyright © 2023</small>
+      </div>
+    </div>
     <!--end of footer-->
   
 
@@ -398,36 +403,6 @@
     <script>
       AOS.init();
     </script>
-    <script>
-      // Add smooth scrolling to anchor links
-      document.querySelectorAll("a.nav-link").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
 
-          const targetId = this.getAttribute("href").substring(1);
-          const targetElement = document.getElementById(targetId);
-
-          if (targetId === "home") {
-            // Scroll back to the top for the "Home" link
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          } else {
-            // Scroll to the other sections
-            window.scrollTo({
-              top: targetElement.offsetTop,
-              behavior: "smooth",
-            });
-          }
-
-          // Close the mobile navbar if it's open
-          const navbarToggler = document.querySelector(".navbar-toggler");
-          if (navbarToggler.classList.contains("collapsed") === false) {
-            navbarToggler.click();
-          }
-        });
-      });
-    </script>
   </body>
 </html>

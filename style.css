@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /*universal css*/
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 
@@ -12,6 +12,7 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+
 /*end of universal*/
 
 body {
