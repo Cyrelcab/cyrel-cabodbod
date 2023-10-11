@@ -386,7 +386,7 @@
     <!--end of project section-->
     <!--footer-->
     <div class="container-fluid">
-      <div class="container pb-3">
+      <div class="container">
         <div class="row">
           <div class="col">
             <hr>
@@ -402,6 +402,37 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // Add smooth scrolling to anchor links
+      document.querySelectorAll("a.nav-link").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetId === "home") {
+            // Scroll back to the top for the "Home" link
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          } else {
+            // Scroll to the other sections
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth",
+            });
+          }
+
+          // Close the mobile navbar if it's open
+          const navbarToggler = document.querySelector(".navbar-toggler");
+          if (navbarToggler.classList.contains("collapsed") === false) {
+            navbarToggler.click();
+          }
+        });
+      });
     </script>
 
   </body>
