@@ -20,6 +20,14 @@ body {
 }
 
 /*home section*/
+#message{
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
 
 .custom-color {
   color: rgb(85, 85, 85);
