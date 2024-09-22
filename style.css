@@ -20,11 +20,11 @@ body {
 }
 
 /*home section*/
-#message{
+#message {
   animation: blinker 1s linear infinite;
 }
-@keyframes blinker{
-  50%{
+@keyframes blinker {
+  50% {
     opacity: 0;
   }
 }
@@ -68,22 +68,27 @@ body {
     width: 85px;
   }
   /*tech-stack*/
-  div .custom-text{
+  div .custom-text {
     width: 295px;
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 820px) {
-  #home{
+  #home {
     padding-top: 300px;
   }
 }
 @media only screen and (min-width: 900px) {
-  #home{
+  #home {
     padding-top: 170px;
   }
 }
 
+/*this is inactiveLink for LinkedIn account*/
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
 /*end of home section*/
 /*about section*/
 .custom-rounded {
@@ -95,20 +100,19 @@ body {
 .custom-img {
   height: 150px;
 }
-.custom-text{
+.custom-text {
   width: 50%;
 }
 /*end of tech stack section*/
 /*projects section*/
-.custom-img-project{
+.custom-img-project {
   width: 300px;
   height: 200px;
-  transition: transform .5s ease;
-
+  transition: transform 0.5s ease;
 }
-.custom-img-project:hover{
+.custom-img-project:hover {
   transform: scale(1.2);
 }
-.custom-border{
+.custom-border {
   width: 370px;
 }
